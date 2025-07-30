@@ -1,0 +1,25 @@
+.dot {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+  &-1 {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #f5b28e;
+  }
+
+  &-2 {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #f9e4d7;
+  }
+
+  &-3 {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #faf3ec;
+  }
+}

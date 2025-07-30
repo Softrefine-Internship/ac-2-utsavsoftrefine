@@ -1,0 +1,27 @@
+@use "./../abstracts/variables" as *;
+
+.m-bt--sm {
+  margin-bottom: $m-es;
+}
+
+.m-bt--md {
+  margin-bottom: $m-md;
+}
+
+.m-bt--lg {
+    margin-bottom: $m-lg;
+  }
+
+
+.m-bt--xl {
+  margin-bottom: $m-xl * 1.2;
+}
+
+
+.m-bt--2xl {
+    margin-bottom: $m-xl * 1.8;
+  }
+
+.max-width {
+    max-width: 50%;
+}

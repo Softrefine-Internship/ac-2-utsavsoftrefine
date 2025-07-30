@@ -1,0 +1,18 @@
+@use "./../abstracts/variables" as *;
+
+.reminder-card {
+    border: 1px solid $color-gray;
+    border-radius: 25px;
+    padding: $p-md $p-lg;
+
+  &__text {
+    color: $color-gray;
+    font-size: $font-sm;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,132 @@
+@use "./../abstracts/variables" as *;
+
+.project-card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.project-card {
+  padding: $p-xl;
+  border-radius: 20px;
+  width: 29rem;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-xl * 3;
+  justify-content: space-between;
+
+  &--color-pitch {
+    background-color: $color-pitch;
+
+    .project-card__avatar:nth-child(2) img {
+      z-index: 5;
+      border: 2px solid $color-pitch;
+    }
+
+    .project-card__avatar:first-child::after {
+      content: "+3";
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #000;
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+  }
+
+  &--color-yellow {
+    background-color: $color-yellow;
+    .project-card__avatar:nth-child(2) img {
+      z-index: 5;
+      border: 2px solid $color-yellow;
+    }
+
+    .project-card__avatar:first-child::after {
+      content: "+2";
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1rem;
+      color: $color-black;
+      background-color: $color-yellow;
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      border: 1px solid $color-black;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & ion-icon {
+      font-size: 2rem;
+    }
+  }
+
+  &__img-container {
+    display: flex;
+
+    .project-card__avatar {
+      position: relative;
+      width: 3.2rem;
+      height: 3.2rem;
+
+      &:not(:first-child) {
+        margin-left: $m-es * -1;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0);
+        object-fit: cover;
+      }
+
+      &:nth-child(2) {
+        z-index: 5;
+      }
+    }
+  }
+
+  &__progress-text {
+    font-size: $font-sm;
+    margin-bottom: 0.8rem;
+  }
+
+  &__progress-bar {
+    height: 0.6rem;
+    background-color: $color-white;
+    border-radius: 3px;
+    overflow: hidden;
+
+    &-fill {
+      background-color: $color-black;
+      height: 100%;
+      width: 0%;
+      transition: width 0.4s ease;
+    }
+  }
+}
+
+.project-card__progress-bar-fill--40 {
+  width: 40%;
+}
+
+.project-card__progress-bar-fill--75 {
+  width: 75%;
+}

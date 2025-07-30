@@ -1,0 +1,11 @@
+@use "./../abstracts/variables" as *;
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__text {
+    color: $color-primary;
+    font-size: $font-sm;
+  }
+}

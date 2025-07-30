@@ -1,0 +1,50 @@
+@use "./../abstracts/variables" as *;
+
+.user-navigation {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__noti {
+    position: relative;
+    font-size: $font-lg;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: $color-primary;
+      top: 7%;
+      right: 25%;
+    }
+  }
+
+  &__pp {
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+  }
+
+  &__pn {
+    font-size: $font-md;
+    & span {
+      color: $color-gray;
+      font-size: $font-sm;
+    }
+  }
+
+  &__drop {
+    font-size: $font-lg;
+    color: $color-primary;
+    background-color: mix(white, $color-gray, 85%);
+
+    border-radius: 50%;
+  }
+}

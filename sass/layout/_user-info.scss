@@ -1,0 +1,16 @@
+@use "./../abstracts/variables" as *;
+
+.user-info{
+    display: inline-block;
+
+
+    &__icon{
+        text-align: end;
+        font-size: $font-xl;
+        color: $color-primary;
+    }
+}
+
+.user-gallary{
+    display: flex;
+}

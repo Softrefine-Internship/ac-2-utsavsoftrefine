@@ -1,0 +1,17 @@
+@use "./../abstracts/variables" as *;
+
+.btn {
+  padding: $p-sm $p-xl;
+  font-size: $font-sm * 1.2;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn-border {
+  border: 1px dashed $color-primary;
+}
+
+.btn-color {
+  background-color: $color-primary;
+  color: $color-white;
+}

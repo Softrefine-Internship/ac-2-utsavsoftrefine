@@ -1,0 +1,28 @@
+@use "./../abstracts/variables" as *;
+
+
+.search-bar{
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: $p-es;
+    border: 1px solid $color-gray;
+    border-radius: 50px;
+    gap: $gap-es;
+
+    &__icon{
+        font-size: $font-lg;
+        color: $color-gray;
+    }
+
+    &__input{
+        outline: none;
+        border: none;
+        color: $color-gray;
+        font-family: inherit;
+        // padding: $p-md;
+    }
+
+
+}

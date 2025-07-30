@@ -1,0 +1,5 @@
+@use "./../abstracts/variables" as *;
+
+.project-info {
+  padding: $p-md $p-lg;
+}
