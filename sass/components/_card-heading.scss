@@ -4,8 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: $p-es;
   &__text {
     color: $color-primary;
-    font-size: $font-sm;
+    font-size: $font-md;
   }
 }

@@ -9,62 +9,8 @@
   <body>
     <div class="container">
       <div class="navigation">
-        <div class="logo-compnay">
-          <svg
-            width="30"
-            height="50"
-            viewBox="66 40"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g transform="matrix(0.59375,0,0,0.59375,6,6)" fill="#111111">
-              <path
-                d="M16,0C11.905,0,7.81,1.562,4.686,4.686c-6.248,6.248-6.248,16.379,0,22.627C7.81,30.438,11.905,32,16,32c4.095,0,8.19-1.562,11.314-4.686c6.248-6.248,6.248-16.379,0-22.627C24.19,1.562,20.095,0,16,0z M26.607,26.607C23.773,29.44,20.007,31,16,31s-7.773-1.56-10.607-4.393c-5.849-5.849-5.849-15.365,0-21.213C8.227,2.56,11.993,1,16,1s7.773,1.56,10.607,4.393C32.455,11.242,32.455,20.758,26.607,26.607z"
-              ></path>
-              <rect
-                x="6.298"
-                y="10.905"
-                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.681 11.5091)"
-                width="10.508"
-                height="1"
-              ></rect>
-              <rect
-                x="5.469"
-                y="13.046"
-                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.4781 13.8675)"
-                width="17.063"
-                height="1"
-              ></rect>
-              <rect
-                x="4.346"
-                y="15.637"
-                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.7239 16.04)"
-                width="23.307"
-                height="1"
-              ></rect>
-              <rect
-                x="10.126"
-                y="17.936"
-                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -7.6786 18.3333)"
-                width="16.33"
-                height="1"
-              ></rect>
-              <rect
-                x="15.3"
-                y="20.292"
-                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.6902 20.603)"
-                width="10.451"
-                height="1"
-              ></rect>
-            </g>
-            <g
-              transform="matrix(2.551020471353985,0,0,2.551020471353985,0,-6)"
-              fill="#111111"
-            >
-              <path
-                d="M11.4 6 l-7.98 12.54 l8.06 0 l0 1.46 l-10.78 0 l7.98 -12.56 l-7.52 0 l0 -1.44 l10.24 0 z"
-              ></path>
-            </g>
-          </svg>
+        <div class="logo-compnay bigeer-screen">
+          <img src="./img/logo.png" alt="" />
         </div>
         <nav>
           <ul class="navigation__container">
@@ -89,10 +35,19 @@
           </ul>
         </nav>
 
-        <div class="help">
+        <div class="help bigeer-screen">
           <ion-icon name="help-circle"></ion-icon>
         </div>
       </div>
+
+      <div class="help--small-screen">
+        <ion-icon name="help-circle"></ion-icon>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn">
+        <ion-icon name="menu-outline" class="hamburger-icon"></ion-icon>
+      </button>
+      <div class="overlay" id="overlay"></div>
 
       <aside class="aside">
         <div class="aside-heading">
@@ -253,7 +208,30 @@
         </div>
       </aside>
 
-      <main>
+      <main class="main-grid">
+        <nav class="user-navigation m-bt--xl user-navigation--smaller-screen">
+          <div class="logo-compnay">
+            <img src="./img/logo.png" alt="" />
+          </div>
+          <div class="user-cta">
+            <ion-icon
+              class="user-cta__noti"
+              name="notifications-outline"
+            ></ion-icon>
+
+            <img class="user-cta__pp" src="./img/women-1.jpg" alt="" />
+
+            <p class="user-cta__pn">
+              <span> User <br /> </span> Maria
+            </p>
+
+            <ion-icon
+              class="user-cta__drop"
+              name="chevron-down-circle-outline"
+            ></ion-icon>
+          </div>
+        </nav>
+
         <section class="project-info">
           <h2 class="heading-primary m-bt--sm">Today, 4 October</h2>
           <div class="search-bar m-bt--2xl">
@@ -278,22 +256,13 @@
                 <div class="project-card__menu m-bt--xl">
                   <div class="project-card__img-container">
                     <div class="project-card__avatar">
-                      <img
-                        src="https://randomuser.me/api/portraits/men/62.jpg"
-                        alt=""
-                      />
+                      <img src="./img/women-2.jpg" alt="" />
                     </div>
                     <div class="project-card__avatar">
-                      <img
-                        src="https://randomuser.me/api/portraits/women/61.jpg"
-                        alt=""
-                      />
+                      <img src="./img/women-2.jpg" alt="" />
                     </div>
                     <div class="project-card__avatar">
-                      <img
-                        src="https://randomuser.me/api/portraits/women/52.jpg"
-                        alt=""
-                      />
+                      <img src="./img/women-1.jpg" alt="" />
                     </div>
                   </div>
 
@@ -319,22 +288,13 @@
                 <div class="project-card__menu m-bt--xl">
                   <div class="project-card__img-container">
                     <div class="project-card__avatar">
-                      <img
-                        src="https://randomuser.me/api/portraits/men/62.jpg"
-                        alt=""
-                      />
+                      <img src="./img/women-2.jpg" alt="" />
                     </div>
                     <div class="project-card__avatar">
-                      <img
-                        src="https://randomuser.me/api/portraits/women/49.jpg"
-                        alt=""
-                      />
+                      <img src="./img/women-2.jpg" alt="" />
                     </div>
                     <div class="project-card__avatar">
-                      <img
-                        src="https://randomuser.me/api/portraits/women/81.jpg"
-                        alt=""
-                      />
+                      <img src="./img/women-1.jpg" alt="" />
                     </div>
                   </div>
 
@@ -379,25 +339,24 @@
         </section>
 
         <section class="user-info">
-          <p class="user-info__icon">
+          <p class="user-info__icon m-bt--sm">
             <ion-icon name="ellipsis-horizontal"></ion-icon>
           </p>
 
-          <nav class="user-navigation">
+          <nav class="user-navigation m-bt--2xl">
             <div class="btn btn-color">Add Project</div>
 
-            <div class="user-cta">
+            <p class="smaller-screen-icon">
+              <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </p>
+
+            <div class="user-cta user-cta--bigger-screen">
               <ion-icon
                 class="user-cta__noti"
                 name="notifications-outline"
               ></ion-icon>
 
-              <img
-                class="user-cta__pp"
-                src="https://randomuser.me/api/portraits/men/62.jpg
-            "
-                alt=""
-              />
+              <img class="user-cta__pp" src="./img/women-1.jpg" alt="" />
 
               <p class="user-cta__pn">
                 <span> User <br /> </span> Maria
@@ -410,43 +369,155 @@
             </div>
           </nav>
 
-          <h2 class="heading-primary">Team members</h2>
+          <h2 class="heading-ternary">Team members</h2>
 
-          <div class="user-gallary">
+          <div class="user-gallary m-bt--xl">
             <div class="user-gallary__avatar">
-              <img
-                src="https://randomuser.me/api/portraits/men/62.jpg"
-                alt=""
-              />
+              <img src="./img/women-1.jpg" alt="" />
             </div>
             <div class="user-gallary__avatar">
-              <img
-                src="https://randomuser.me/api/portraits/women/61.jpg"
-                alt=""
-              />
+              <img src="./img/women-2.jpg" alt="" />
+            </div>
+            <div class="user-gallary__avatar user-gallary__avatar--noavatar">
+              JR
             </div>
             <div class="user-gallary__avatar">
-              <img
-                src="https://randomuser.me/api/portraits/women/52.jpg"
-                alt=""
-              />
+              <img src="./img/men-1.jpg" alt="" />
             </div>
+
             <div class="user-gallary__avatar">
-              <img
-                src="https://randomuser.me/api/portraits/women/52.jpg"
-                alt=""
-              />
-            </div>  <div class="user-gallary__avatar">
-              <img
-                src="https://randomuser.me/api/portraits/women/52.jpg"
-                alt=""
-              />
+              <img src="./img/men-2.jpg" alt="" />
+            </div>
+
+            <div class="user-gallary__add btn-border">
+              <ion-icon
+                class="user-gallary__add__icon"
+                name="add-outline"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="project-status-card-container m-bt--xl">
+            <div class="project-status-card">
+              <p class="reminder-card__text">Project time</p>
+              <h4 class="heading-ternary">18 hours</h4>
+            </div>
+
+            <div class="project-status-card">
+              <p class="reminder-card__text">Tasks in progress</p>
+              <h4 class="heading-ternary">2</h4>
+            </div>
+
+            <div class="project-status-card">
+              <p class="reminder-card__text">Finised tasks</p>
+              <h4 class="heading-ternary">16</h4>
+            </div>
+          </div>
+
+          <div class="card-heading m-bt--md">
+            <h3 class="heading-ternary">Daily tasks(3)</h3>
+
+            <p class="card-heading__text">Edit</p>
+          </div>
+
+          <div class="daily-card-conatiner">
+            <div class="daily-card daily-card--color-skin">
+              <div class="daily-card__status m-bt--md"></div>
+              <p class="daily-card__text">Add new</p>
+            </div>
+            <div class="daily-card daily-card--wavy-style">
+              <div class="daily-card__status m-bt--md">
+                <ion-icon
+                  class="daily-card__status--icon-hotpink"
+                  name="ellipse"
+                ></ion-icon>
+                <p>New</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <p class="daily-card__text">
+                Change color palette to more bright
+              </p>
+            </div>
+            <div class="daily-card daily-card--block-style">
+              <div class="daily-card__status m-bt--md">
+                <ion-icon
+                  class="daily-card__status--icon-green"
+                  name="ellipse"
+                ></ion-icon>
+                <p>In Progress</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <p class="daily-card__text">Make prototype for mobile version</p>
+            </div>
+            <div class="daily-card daily-card--color-orange">
+              <div class="daily-card__status m-bt--md">
+                <ion-icon
+                  class="daily-card__status--icon-white"
+                  name="ellipse"
+                ></ion-icon>
+                <p>Done</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <p class="daily-card__text">Make fixes in homepage</p>
             </div>
           </div>
         </section>
       </main>
     </div>
   </body>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const sidebar = document.querySelector(".aside");
+    const overlay = document.getElementById("overlay");
+
+    function toggleMenu() {
+      sidebar.classList.toggle("active");
+      overlay.classList.toggle("active");
+    }
+
+    hamburgerBtn.addEventListener("click", toggleMenu);
+    overlay.addEventListener("click", toggleMenu);
+
+    const dot = document.createElement("div");
+    document.body.appendChild(dot);
+
+    Object.assign(dot.style, {
+      position: "fixed",
+      width: "10px",
+      height: "10px",
+      backgroundColor: "#f0894d",
+      borderRadius: "50%",
+      pointerEvents: "none",
+      transform: "translate(-50%, -50%)",
+      zIndex: "9999",
+      top: "0px",
+      left: "0px",
+    });
+
+
+    let mouseX = 0,
+      mouseY = 0;
+    let dotX = 0,
+      dotY = 0;
+
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animate() {
+      dotX += (mouseX - dotX) * 0.1;
+      dotY += (mouseY - dotY) * 0.1;
+
+      dot.style.left = `${dotX}px`;
+      dot.style.top = `${dotY}px`;
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

@@ -1,16 +1,100 @@
 @use "./../abstracts/variables" as *;
 
-.user-info{
-    display: inline-block;
+.user-info {
+  display: inline-block;
+  padding: $p-md $p-lg;
+  box-shadow: 0 5px 60px rgba($color: #000000, $alpha: 0.15);
 
+  @media (max-width: 62.5em) {
+    box-shadow: none;
+  }
 
-    &__icon{
+  &__icon {
+    text-align: end;
+    font-size: $font-xl;
+    color: $color-primary;
+    &--smaller-screen {
+      visibility: hidden;
+    }
+    @media (max-width: 62.5em) {
+      display: none;
+
+      &--smaller-screen {
+        visibility: visible;
         text-align: end;
         font-size: $font-xl;
         color: $color-primary;
+      }
     }
+  }
 }
 
-.user-gallary{
+.user-gallary {
+  display: flex;
+  align-items: center;
+  gap: $gap-sm;
+  padding: $p-es;
+
+
+  @media (max-width:62.5em){
+    justify-content: space-between;
+  }
+
+  &__add {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: $color-secondary;
+    border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    &__icon {
+      font-size: $font-xl;
+      color: $color-primary;
+    }
+  }
+
+  &__avatar {
+    width: 6rem;
+    height: 6rem;
+
+    &--noavatar {
+      background-color: $color-secondary;
+      color: $color-primary;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $font-md;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}
+
+.project-status-card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: $p-xl $p-md;
+  box-shadow: 0 5px 60px rgba($color: #000000, $alpha: 0.15);
+  border-radius: 20px;
+}
+
+.smaller-screen-icon {
+  display: none;
+
+  @media (max-width: 62.5em) {
+    display: block;
+    text-align: end;
+    font-size: $font-xl;
+    color: $color-primary;
+  }
 }

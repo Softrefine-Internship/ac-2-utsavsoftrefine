@@ -1,24 +1,51 @@
 @use "./../abstracts/variables" as *;
 
 .user-navigation {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &--smaller-screen {
+    display: none;
+  }
+
+
+
+  @media (max-width: 62.5em) {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .user-cta {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: $gap-es;
+
+  @media (max-width: 62.5em) {
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: $gap-md;
+    margin-right: $m-md;
+  }
+
+  @media (max-width: 62.5em) {
+    &--bigger-screen {
+      display: none;
+    }
+  }
+
   &__noti {
     position: relative;
     font-size: $font-lg;
     &::after {
       content: "";
       position: absolute;
-      width: 3px;
-      height: 3px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       background-color: $color-primary;
       top: 7%;
@@ -30,10 +57,11 @@
     width: 3.7rem;
     height: 3.7rem;
     border-radius: 50%;
+    object-fit: cover;
   }
 
   &__pn {
-    font-size: $font-md;
+    font-size: $font-sm;
     & span {
       color: $color-gray;
       font-size: $font-sm;
