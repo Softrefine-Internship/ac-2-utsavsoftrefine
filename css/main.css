@@ -218,6 +218,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
   padding: 1rem;
 }
 .card-heading__text {
@@ -497,6 +498,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 @media (max-width: 62.5em) {
   .navigation {
