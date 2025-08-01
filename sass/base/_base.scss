@@ -11,6 +11,7 @@
 html {
   font-size: 62.5%;
   height: 100%;
+  overflow-x: hidden;
 
   @media (max-width: 87.5em) {
     font-size: 55%;
@@ -42,7 +43,7 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 
-  @media (max-width: 62.5em) {
+  @media (max-width: 53em) {
     top: 8rem;
     right: 1rem;
   }
@@ -59,7 +60,7 @@ body {
   z-index: 999;
 }
 
-@media (max-width: 78.75em) {
+@media (max-width: 75em) {
   .aside {
     position: fixed;
     top: 0;
@@ -74,9 +75,6 @@ body {
     transform: translateX(0);
   }
 
-  .hamburger {
-    display: block;
-  }
 
   .overlay.active {
     display: block;
@@ -84,7 +82,7 @@ body {
 }
 
 .bigeer-screen {
-  @media (max-width: 62.5em) {
+  @media (max-width: 53em) {
     display: none;
   }
 }

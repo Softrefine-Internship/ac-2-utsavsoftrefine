@@ -6,6 +6,12 @@
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
 }
 
 .btn-border {

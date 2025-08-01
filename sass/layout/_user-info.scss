@@ -5,7 +5,7 @@
   padding: $p-md $p-lg;
   box-shadow: 0 5px 60px rgba($color: #000000, $alpha: 0.15);
 
-  @media (max-width: 62.5em) {
+  @media (max-width: 53em) {
     box-shadow: none;
   }
 
@@ -16,7 +16,7 @@
     &--smaller-screen {
       visibility: hidden;
     }
-    @media (max-width: 62.5em) {
+    @media (max-width: 53em) {
       display: none;
 
       &--smaller-screen {
@@ -35,9 +35,11 @@
   gap: $gap-sm;
   padding: $p-es;
 
-
-  @media (max-width:62.5em){
-    justify-content: space-between;
+  @media (max-width: 53em) {
+    gap: $gap-md;
+  }
+  @media (max-width: 31em) {
+    gap: $gap-sm;
   }
 
   &__add {
@@ -49,8 +51,6 @@
     align-items: center;
     justify-content: center;
 
-
-
     &__icon {
       font-size: $font-xl;
       color: $color-primary;
@@ -60,6 +60,18 @@
   &__avatar {
     width: 6rem;
     height: 6rem;
+    transition: all 0.3s ease;
+
+    @media (max-width: 31em) {
+      & {
+        width: 10vw;
+        height: 10vw;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     &--noavatar {
       background-color: $color-secondary;
@@ -69,6 +81,9 @@
       justify-content: center;
       align-items: center;
       font-size: $font-md;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     & img {
@@ -91,7 +106,7 @@
 .smaller-screen-icon {
   display: none;
 
-  @media (max-width: 62.5em) {
+  @media (max-width: 53em) {
     display: block;
     text-align: end;
     font-size: $font-xl;

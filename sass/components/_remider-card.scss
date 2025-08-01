@@ -8,11 +8,13 @@
   &__text {
     color: $color-gray;
     font-size: $font-sm;
+    font-weight: 600;
   }
 
   &__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    letter-spacing: -0.5px;
   }
 }

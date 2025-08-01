@@ -7,7 +7,7 @@
   align-items: center;
   overflow: hidden;
 
-  @media (max-width: 62.5em) {
+  @media (max-width: 53em) {
     order: 2;
     position: fixed;
     bottom: 0;
@@ -24,7 +24,7 @@
     gap: $gap-sm;
     list-style: none;
 
-    @media (max-width: 62.5em) {
+    @media (max-width: 53em) {
       flex-direction: row;
       order: 2;
     }
@@ -57,7 +57,7 @@
   // padding: $p-sm;
   cursor: pointer;
 
-  @media (max-width: 62.5em) {
+  @media (max-width: 53em) {
     display: block;
     position: fixed;
     bottom: 10rem;
@@ -79,7 +79,7 @@
   margin-top: $m-es;
   border-bottom: 1px solid $color-gray;
   cursor: pointer;
-  @media (max-width: 62.5em) {
+  @media (max-width: 53em) {
     border-bottom: none;
   }
 }

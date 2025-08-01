@@ -1,24 +1,30 @@
 @use "./../abstracts/variables" as *;
 
 .project-card-container {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
   gap: 2rem;
 
   @media (max-width: 31em) {
-    flex-wrap: wrap;
+    justify-self: center;
+    grid-template-columns: 1fr;
   }
 }
 
 .project-card {
   padding: $p-xl;
   border-radius: 20px;
-  width: 29rem;
   display: flex;
   flex-direction: column;
   gap: $gap-xl * 3;
   justify-content: space-between;
   cursor: pointer;
+
+  @media (max-width: 31em) {
+    width: 29rem;
+    height: 40rem;
+  }
 
   &--color-pitch {
     background-color: $color-pitch;

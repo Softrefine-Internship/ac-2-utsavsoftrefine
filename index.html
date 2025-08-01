@@ -14,7 +14,7 @@
         </div>
         <nav>
           <ul class="navigation__container">
-            <li class="navigation__container__item">
+            <li class="navigation__container__item" id="hamburgerBtn">
               <ion-icon name="home-outline"></ion-icon>
             </li>
             <li class="navigation__container__item">
@@ -44,9 +44,6 @@
         <ion-icon name="help-circle"></ion-icon>
       </div>
 
-      <button class="hamburger" id="hamburgerBtn">
-        <ion-icon name="menu-outline" class="hamburger-icon"></ion-icon>
-      </button>
       <div class="overlay" id="overlay"></div>
 
       <aside class="aside">
@@ -245,7 +242,7 @@
             />
           </div>
           <div class="card-heading m-bt--md">
-            <h3 class="heading-ternary">Recent projects</h3>
+            <h3 class="heading-secondary">Recent projects</h3>
 
             <p class="card-heading__text">View all</p>
           </div>
@@ -300,7 +297,7 @@
 
                   <ion-icon name="ellipsis-vertical"></ion-icon>
                 </div>
-                <h2 class="heading-primary m-bt--md">
+                <h2 class="heading-primary m-bt--md max-width--card">
                   Make unique page for customer
                 </h2>
                 <p class="aside-heading__text">Deadline: 30 October</p>
@@ -318,7 +315,7 @@
             </div>
           </div>
 
-          <h3 class="heading-ternary m-bt--lg">Reminders</h3>
+          <h3 class="heading-secondary m-bt--lg">Reminders</h3>
 
           <div class="reminder-card">
             <p class="reminder-card__text">Tomorrow, 16:00-18:00</p>
@@ -369,7 +366,7 @@
             </div>
           </nav>
 
-          <h2 class="heading-ternary">Team members</h2>
+          <h2 class="heading-secondary">Team members</h2>
 
           <div class="user-gallary m-bt--xl">
             <div class="user-gallary__avatar">
@@ -415,7 +412,7 @@
           </div>
 
           <div class="card-heading m-bt--md">
-            <h3 class="heading-ternary">Daily tasks(3)</h3>
+            <h3 class="heading-secondary">Daily tasks(3)</h3>
 
             <p class="card-heading__text">Edit</p>
           </div>
@@ -521,7 +518,6 @@
       const link = item.querySelector(".sidebar__link");
       const submenu = item.querySelector(".sidebar__submenu");
 
-      // ensure accessibility
       link.setAttribute("role", "button");
       link.setAttribute("aria-expanded", "false");
 
