@@ -11,6 +11,10 @@
     gap: 3vw;
     margin-bottom: 7rem;
   }
+
+  @media (max-width: 31em) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .daily-card {
