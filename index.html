@@ -495,7 +495,6 @@
       left: "0px",
     });
 
-
     let mouseX = 0,
       mouseY = 0;
     let dotX = 0,
@@ -517,6 +516,27 @@
     }
 
     animate();
+
+    document.querySelectorAll(".sidebar__item--has-submenu").forEach((item) => {
+      const link = item.querySelector(".sidebar__link");
+      const submenu = item.querySelector(".sidebar__submenu");
+
+      // ensure accessibility
+      link.setAttribute("role", "button");
+      link.setAttribute("aria-expanded", "false");
+
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const expanded = link.getAttribute("aria-expanded") === "true";
+        if (expanded) {
+          link.setAttribute("aria-expanded", "false");
+          item.classList.remove("sidebar__item--expanded");
+        } else {
+          link.setAttribute("aria-expanded", "true");
+          item.classList.add("sidebar__item--expanded");
+        }
+      });
+    });
   </script>
   <script
     type="module"
